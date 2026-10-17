@@ -299,19 +299,30 @@
       </div>
       <div class="card-body">
         <div class="app-name">Resuwe 2.0</div>
-        <div class="app-desc">Rebuild preview of Resuwe Recruiter: legacy grid layout, Boolean search scoring, status buttons with history, and resume preview. Runs on sample data only.</div>
-        <div class="updated">Claude artifact &nbsp;Oct 4, 2026 &nbsp;·&nbsp; Not connected to live data</div>
-        <a class="launch" href="https://claude.ai/artifact/BwDnhZDohNQpRMfRTA97Kp" target="_blank">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Open Prototype
-        </a>
+        <div class="app-desc">Rebuild of Resuwe Recruiter: legacy grid layout, status buttons with history, and resume preview. The local preview runs read-only on the migrated real data; the prototype uses sample data.</div>
+        <div class="updated">Local preview &nbsp;Oct 17, 2026 &nbsp;·&nbsp; Prototype &nbsp;Oct 4, 2026</div>
+        <div style="display:flex;gap:.5rem;margin-top:.875rem;flex-wrap:wrap;">
+          <a class="launch" href="http://127.0.0.1:5200" target="_blank" style="flex:1;justify-content:center;background:#2563eb;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open Local Preview
+          </a>
+          <a class="launch" href="https://claude.ai/artifact/BwDnhZDohNQpRMfRTA97Kp" target="_blank" style="flex:1;justify-content:center;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open Prototype
+          </a>
+        </div>
       </div>
       <div class="startup">
-        <div class="startup-label">Open project folder in PowerShell</div>
+        <div class="startup-label">How to start the local preview</div>
         <div class="cmd">
           <code>cd "C:\Users\jeff\OneDrive\Documents\Website, ATS &amp; Development\Claude Code\resuwe"</code>
           <button class="copy" onclick="cp(this)">copy</button>
         </div>
+        <div class="cmd">
+          <code>npm run dev</code>
+          <button class="copy" onclick="cp(this)">copy</button>
+        </div>
+        <div class="startup-note">Starts the read-only preview: the app <strong style="color:var(--muted)">(port 5200)</strong> and its data server <strong style="color:var(--muted)">(port 4200)</strong> together. Then click <strong style="color:var(--muted)">Open Local Preview</strong>. Keep the PowerShell window open while you use it; press Ctrl+C there to stop.</div>
       </div>
     </div>
 
